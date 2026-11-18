@@ -1,0 +1,35 @@
+name: mirror
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: mirror
+  cancel-in-progress: false
+
+jobs:
+  mirror:
+    # This file is also published in the public repo; the job runs only here.
+    if: github.repository == 'pipe23-org/website'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Push main to pipe23-org/pipe23-org.github.io
+        env:
+          MIRROR_DEPLOY_KEY: ${{ secrets.MIRROR_DEPLOY_KEY }}
+        run: |
+          umask 077
+          printf '%s\n' "$MIRROR_DEPLOY_KEY" > "$RUNNER_TEMP/mirror_key"
+          # GitHub's ed25519 host key, from
+          # https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/githubs-ssh-key-fingerprints
+          echo 'github.com ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOMqqnkVzrm0SdG6UOoqKLsabgH5C9okWi0dh2l9GKJl' > "$RUNNER_TEMP/known_hosts"
+          export GIT_SSH_COMMAND="ssh -i $RUNNER_TEMP/mirror_key -o IdentitiesOnly=yes -o UserKnownHostsFile=$RUNNER_TEMP/known_hosts -o StrictHostKeyChecking=yes"
+          git push git@github.com:pipe23-org/pipe23-org.github.io.git "$GITHUB_SHA:refs/heads/main"
