@@ -19,6 +19,6 @@ Issues raised upstream:
 
 ## Journalism
 
-- [Liquid Investigations](https://github.com/liquidinvestigations). Document search platform for investigative journalists, built at CRJI. Technical product manager, 2017 to 2018.
-- [The AI Revolution Comes With the Exploitation of Gig Workers](https://algorithmwatch.org/en/ai-revolution-exploitation-gig-workers/). Co-written, published by AlgorithmWatch.
-- [Scams and Shadow Workers: A Black Market is Selling European Accounts for AI Training](https://algorithmwatch.org/en/scams-and-shadow-workers-a-black-market/). Co-written, published by AlgorithmWatch.
+- [Liquid Investigations](https://github.com/liquidinvestigations). Privacy-respecting tools for investigative journalists, built at CRJI. Technical product manager, 2017 to 2018.
+- [The AI Revolution Comes With the Exploitation of Gig Workers](https://algorithmwatch.org/en/ai-revolution-exploitation-gig-workers/). Co-written with Michael Bird, published by AlgorithmWatch.
+- [Scams and Shadow Workers: A Black Market is Selling European Accounts for AI Training](https://algorithmwatch.org/en/scams-and-shadow-workers-a-black-market/). Co-written with Michael Bird, published by AlgorithmWatch.
