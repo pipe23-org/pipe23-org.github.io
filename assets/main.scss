@@ -1,0 +1,13 @@
+---
+# The theme's stylesheet, followed by this site's additions.
+---
+
+@import "minima";
+
+// The photo on the front page sits at the top right and the text wraps beside it.
+img[src$="nathan-and-bertrand.jpg"] {
+  float: right;
+  width: 220px;
+  max-width: 38%;
+  margin: 0 0 15px 24px;
+}

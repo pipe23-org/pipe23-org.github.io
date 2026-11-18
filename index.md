@@ -2,6 +2,8 @@
 layout: home
 ---
 
+![Nathan Schepers and Bertrand Russell](/assets/images/nathan-and-bertrand.jpg)
+
 pipe23 is the work of Nathan Schepers and Bertrand Russell. It focuses on public infrastructure research and engineering, currently on European digital identity.
 
 **Nathan Schepers** is an independent researcher and software engineer. His current work is on zero-knowledge proofs for EU age verification and the EU Digital Identity Wallet. GitHub links can be found under [Work](/work/).
