@@ -1,5 +1,8 @@
 <footer class="site-footer">
   <div class="wrapper">
-    <p style="margin: 0; font-size: 15px; color: #828282;">{{ site.title | escape }} · {{ site.description | escape }}</p>
+    <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0 30px;">
+      <span class="footer-heading" style="margin: 0;">{{ site.title | escape }}</span>
+      <span style="font-size: 15px; color: #828282;">{{ site.description | escape }}</span>
+    </div>
   </div>
 </footer>
