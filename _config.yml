@@ -2,3 +2,12 @@ title: pipe23
 description: "Tooling for EU age verification, built on the Longfellow zero-knowledge proof system."
 url: "https://pipe23.org"
 theme: minima
+
+# A file in _pages is a page at /<file name>/ with the page layout. The theme
+# lists every page that has a title in the header.
+include: [_pages]
+defaults:
+  - scope: {path: "_pages"}
+    values: {layout: page, permalink: "/:basename/"}
+  - scope: {path: "index.md"}
+    values: {list_title: Notes}
