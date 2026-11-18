@@ -16,7 +16,3 @@ Issues raised upstream:
 
 - [longfellow-zk/longfellow-zk#226](https://github.com/longfellow-zk/longfellow-zk/issues/226). mdoc::v1 prover ignores the requested namespace.
 - [longfellow-zk/longfellow-zk#227](https://github.com/longfellow-zk/longfellow-zk/issues/227). mdoc::v1 fixes DeviceNameSpacesBytes to the empty map.
-
-## Public transit
-
-*[To write: the GTFS modeller, 2021 to 2023, archived. Repository link and description.]*
