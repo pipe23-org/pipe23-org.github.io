@@ -16,3 +16,9 @@ Issues raised upstream:
 
 - [longfellow-zk/longfellow-zk#226](https://github.com/longfellow-zk/longfellow-zk/issues/226). mdoc::v1 prover ignores the requested namespace.
 - [longfellow-zk/longfellow-zk#227](https://github.com/longfellow-zk/longfellow-zk/issues/227). mdoc::v1 fixes DeviceNameSpacesBytes to the empty map.
+
+## Journalism
+
+- [Liquid Investigations](https://github.com/liquidinvestigations). Document search platform for investigative journalists, built at CRJI. Technical product manager, 2017 to 2018.
+- [The AI Revolution Comes With the Exploitation of Gig Workers](https://algorithmwatch.org/en/ai-revolution-exploitation-gig-workers/). Co-written, published by AlgorithmWatch.
+- [Scams and Shadow Workers: A Black Market is Selling European Accounts for AI Training](https://algorithmwatch.org/en/scams-and-shadow-workers-a-black-market/). Co-written, published by AlgorithmWatch.
