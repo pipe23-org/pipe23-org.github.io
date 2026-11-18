@@ -14,7 +14,7 @@ Part of his work has been with journalism and civil society organizations. He wa
 
 He is currently reading _The Accursed Share_.
 
-**Bertrand Russell** is a 16 month old Welsh Springer Spaniel. His current work is on whistle recall and steadiness.
+**Bertrand Russell** (b. 2025) is a Welsh Springer Spaniel. His current work is on whistle recall and steadiness.
 
 ## Contact
 
