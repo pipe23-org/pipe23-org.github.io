@@ -1,8 +1,9 @@
 name: mirror
 
+# Publishes the tagged commit of main as the public repo's main.
 on:
   push:
-    branches: [main]
+    tags: ["live-*"]
 
 permissions:
   contents: read
@@ -22,7 +23,10 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
 
-      - name: Push main to pipe23-org/pipe23-org.github.io
+      - name: Check the tagged commit is on main
+        run: git merge-base --is-ancestor HEAD origin/main
+
+      - name: Push the tagged commit to pipe23-org/pipe23-org.github.io
         env:
           MIRROR_DEPLOY_KEY: ${{ secrets.MIRROR_DEPLOY_KEY }}
         run: |
@@ -32,4 +36,4 @@ jobs:
           # https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/githubs-ssh-key-fingerprints
           echo 'github.com ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOMqqnkVzrm0SdG6UOoqKLsabgH5C9okWi0dh2l9GKJl' > "$RUNNER_TEMP/known_hosts"
           export GIT_SSH_COMMAND="ssh -i $RUNNER_TEMP/mirror_key -o IdentitiesOnly=yes -o UserKnownHostsFile=$RUNNER_TEMP/known_hosts -o StrictHostKeyChecking=yes"
-          git push git@github.com:pipe23-org/pipe23-org.github.io.git "$GITHUB_SHA:refs/heads/main"
+          git push git@github.com:pipe23-org/pipe23-org.github.io.git "HEAD:refs/heads/main"
