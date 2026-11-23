@@ -10,6 +10,8 @@ Repositories are at: [github.com/pipe23-org](https://github.com/pipe23-org).
 
 [EU age verification: providers by country](https://pipe23.org/av-trusted-lists/). A map, rebuilt daily, of the providers EU member states have notified to the Commission's Age Verification Trusted List.
 
+[Selective public disclosure](https://github.com/pipe23-org/selective-public-disclosure). Working papers on EUDI wallet presentations that are made public.
+
 ## Journalism
 
 - [Liquid Investigations](https://github.com/liquidinvestigations). Privacy-respecting tools for investigative journalists, built at CRJI. Technical product manager, 2017 to 2018.
